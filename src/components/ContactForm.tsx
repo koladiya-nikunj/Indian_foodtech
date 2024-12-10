@@ -22,10 +22,10 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-md mx-auto space-y-6 border-2 border-amber-400 rounded-lg p-8 bg-white shadow-lg"
+      className="max-w-md mx-auto md:space-y-6 space-y-2 border-2 border-amber-400 rounded-lg p-8 bg-white shadow-lg"
     >
       <div className="text-center mb-6">
-        <h2 className="text-2xl font-semibold text-gray-800">Inquiry Form</h2>
+        <h2 className="md:text-2xl text-xl font-semibold text-gray-800">Inquiry Form</h2>
       </div>
 
       <div>
@@ -75,7 +75,7 @@ const ContactForm = () => {
         type="submit"
         className="w-full bg-amber-600 text-white py-2 px-4 rounded-lg hover:bg-amber-700 transition-colors"
       >
-        Send Message
+        Submit
       </button>
     </form>
   );
