@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import facebookImg from "../../public/images/facebook.png";
-import LinkedinImg from "../../public/images/linkedin.png";
-import youtubeImg from "../../public/images/youtube.png";
+import facebookImg from "../images/facebook.png";
+import LinkedinImg from "../images/linkedin.png";
+import youtubeImg from "../images/youtube.png";
 
 const Footer = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
