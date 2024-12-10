@@ -87,7 +87,7 @@ const Footer = () => {
 
           <div>
             <h3 className="text-2xl font-semibold mb-6">Follow Us</h3>
-            <div className="space-x-6">
+            <div className="flex space-x-6">
               <a
                 href="https://www.facebook.com/p/Indian-foodtech-100083285323445/"
                 target="_blank"
