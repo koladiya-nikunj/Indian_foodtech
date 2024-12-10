@@ -54,9 +54,9 @@ const NutButterSection = () => {
   }, []);
 
   return (
-    <section id="nut-butter" className="py-16 bg-white">
+    <section id="nut-butter" className="py-8 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Our Nut Butters</h2>
+        <h2 className="md:text-3xl text-2xl font-bold text-center mb-8">Our Nut Butters</h2>
         <div ref={scrollRef} className="flex overflow-x-hidden space-x-4 py-4">
           {[...nutButters, ...nutButters].map((butter, index) => (
             <div

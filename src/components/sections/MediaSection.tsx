@@ -57,9 +57,9 @@ const mediaItems = [
 
 const MediaSection = () => {
   return (
-    <section id="media" className="py-16 bg-amber-50">
+    <section id="media" className="py-8 bg-amber-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8">Media</h2>
+        <h2 className="md:text-3xl text-2xl font-bold text-center mb-8">Media</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {mediaItems.map((item, index) => (
             <div

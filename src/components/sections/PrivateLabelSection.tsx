@@ -2,9 +2,9 @@ import PrivateLabelProcess from "./PrivareLabelProcess";
 
 const PrivateLabelSection = () => {
   return (
-    <section id="private-label" className="py-16 bg-amber-50">
+    <section id="private-label" className="py-8 bg-amber-50">
       <div className="mx-auto text-center container">
-        <h2 className="text-3xl font-bold text-center mb-8">Private Label</h2>
+        <h2 className="md:text-3xl text-2xl font-bold text-center mb-8">Private Label</h2>
       </div>
       <div className="container mx-auto px-4">
         <p className="text-gray-600 max-w-[890px] mx-auto text-left">
