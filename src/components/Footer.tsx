@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import facebookImg from "../../public/images/facebook.png";
 import LinkedinImg from "../../public/images/linkedin.png";
-import twitterImg from "../../public/images/twitter.png";
+import youtubeImg from "../../public/images/youtube.png";
 
 const Footer = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -89,7 +89,7 @@ const Footer = () => {
             <h3 className="text-2xl font-semibold mb-6">Follow Us</h3>
             <div className="flex space-x-6">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/p/Indian-foodtech-100083285323445/"
                 target="_blank"
                 className="hover:text-amber-400 transition-colors duration-200"
               >
@@ -102,7 +102,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/indian-foodtech-b5633829a/"
                 target="_blank"
                 className="hover:text-amber-400 transition-colors duration-200"
               >
@@ -115,12 +115,12 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.twitter.com"
+                href="https://www.youtube.com/channel/UCvEbXeFGPuQEDzlLx_NVBWA"
                 target="_blank"
                 className="hover:text-amber-400 transition-colors duration-200"
               >
                 <img
-                  src={twitterImg}
+                  src={youtubeImg}
                   alt="Twitter"
                   width={30}
                   height={30}
