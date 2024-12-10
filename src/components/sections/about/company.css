@@ -1,0 +1,7 @@
+/* Add this CSS to your global styles */
+@layer utilities {
+    .rotate-y-360 {
+      transform: rotateY(360deg);
+    }
+  }
+  
