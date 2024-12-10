@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import facebookImg from "../../dist/images/facebook.png";
-// import LinkedinImg from "../../dist/images/linkedin.png";
-// import twitterImg from "../../dist/images/twitter.png";
+import facebookImg from "../../public/images/facebook.png";
+import LinkedinImg from "../../public/images/linkedin.png";
+import twitterImg from "../../public/images/twitter.png";
 
 const Footer = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,7 +94,7 @@ const Footer = () => {
                 className="hover:text-amber-400 transition-colors duration-200"
               >
                 <img
-                  // src={facebookImg}
+                  src={facebookImg}
                   alt="Facebook"
                   width={30}
                   height={30}
@@ -107,7 +107,7 @@ const Footer = () => {
                 className="hover:text-amber-400 transition-colors duration-200"
               >
                 <img
-                  // src={LinkedinImg}
+                  src={LinkedinImg}
                   alt="LinkedIn"
                   width={30}
                   height={30}
@@ -120,7 +120,7 @@ const Footer = () => {
                 className="hover:text-amber-400 transition-colors duration-200"
               >
                 <img
-                  // src={twitterImg}
+                  src={twitterImg}
                   alt="Twitter"
                   width={30}
                   height={30}
