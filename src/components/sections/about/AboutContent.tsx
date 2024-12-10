@@ -2,7 +2,7 @@ const AboutContent = () => {
   return (
     <div className="space-y-6 text-gray-600">
       <p className="leading-relaxed">
-        Welcome to Indian Foodtech, a leading manufacturer and exporter of high-quality nut butters and spreads. Based in Surat, Gujarat, we specialize in producing a wide range of Peanut Butter and Nut Butters. We pride ourselves on our ability to customize products according to our clients' needs, offering private labeling solutions to major retailers, importers, and distributors across the globe.
+        Indian Foodtech is a leading manufacturer and exporter of high-quality nut butters and spreads. Based in Surat, Gujarat, we specialize in producing a wide range of Peanut Butter and Nut Butters. We pride ourselves on our ability to customize products according to our clients' needs, offering private labeling solutions to major retailers, importers, and distributors across the globe.
       </p>
       <p className="leading-relaxed">
         Our peanut butter is crafted from premium Indian peanuts, primarily sourced from the Saurashtra region of Gujarat, ensuring that our products maintain their flavor, texture, and shelf life. With a diverse range of flavors and unique combinations, we cater to various markets, including the Beverage, Bakery, and Snack industries where our peanut butter is used for filling, coating, and flavoring.
