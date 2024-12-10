@@ -12,6 +12,7 @@ const Header = () => {
         top: 0,  
         behavior: "smooth", 
       });
+      setIsMenuOpen(false);
       return;
     }
     if (element) {
@@ -25,6 +26,7 @@ const Header = () => {
         top: offsetPosition,
         behavior: "smooth",
       });
+      setIsMenuOpen(false);
     }
   };
 
