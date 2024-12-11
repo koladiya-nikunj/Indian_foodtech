@@ -38,7 +38,8 @@ const Header = () => {
             className="lg:text-3xl text-2xl font-bold text-white cursor-pointer"
             onMouseDown={(e) => e.preventDefault()}
             onClick={() => {
-              window.location.href = "/";
+              window.history.pushState(null, '', '/');
+              window.scrollTo(0, 0); 
             }}
           >
             Indian Foodtech
