@@ -9,23 +9,23 @@ const Footer = () => {
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
+
   const handleScroll = (e: React.MouseEvent, targetId: string) => {
     e.preventDefault();
+    let targetElement: HTMLElement | null;
 
-    let targetElement;
     if (targetId === "/") {
       targetElement = document.documentElement;
-      window.history.pushState(null, "", "/");
     } else {
       targetElement = document.getElementById(targetId);
-      window.history.pushState(null, "", `/${targetId}`);
     }
 
     if (targetElement) {
       window.scrollTo({
-        top: targetElement.offsetTop - 64, // Adjust for header offset
+        top: targetElement.offsetTop - 64,
         behavior: "smooth",
       });
+      window.history.pushState({}, "", `${targetId}`);
     }
   };
 
@@ -75,7 +75,7 @@ const Footer = () => {
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <a
-                    href={`#${link.target}`}
+                    href={`/${link.target}`}
                     className="hover:text-amber-400 hover:underline transition-colors duration-200"
                     onClick={(e) => handleScroll(e, link.target)}
                   >
@@ -159,7 +159,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Hamburger Icon and Menu */}
         <div className="block md:hidden mt-6">
           <button
             onClick={toggleMenu}
@@ -167,7 +166,6 @@ const Footer = () => {
             aria-label="Toggle menu"
           ></button>
 
-          {/* Menu Dropdown */}
           <div
             className={`${
               isMenuOpen ? "block" : "hidden"
@@ -175,11 +173,11 @@ const Footer = () => {
           >
             {quickLinks.map((link) => (
               <a
-                href={`#${link.target}`}
+                href={`/${link.target}`}
                 key={link.name}
                 onClick={(e) => {
                   handleScroll(e, link.target);
-                  setIsMenuOpen(false); // Close the menu after clicking a link
+                  setIsMenuOpen(false);
                 }}
                 className="block text-amber-400 hover:underline"
               >

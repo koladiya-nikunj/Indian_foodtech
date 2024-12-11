@@ -7,16 +7,16 @@ const Header = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (id === "home") {
-      window.history.pushState(null, "", "/");
+      window.history.pushState(null, "", "/"); 
       window.scrollTo({
-        top: 0,
-        behavior: "smooth",
+        top: 0,  
+        behavior: "smooth", 
       });
       setIsMenuOpen(false);
       return;
     }
     if (element) {
-      const offset = 64;
+      const offset = 64; 
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - offset;
 
@@ -36,11 +36,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           <h1
             className="lg:text-3xl text-2xl font-bold text-white cursor-pointer"
-            onMouseDown={(e) => e.preventDefault()}
-            onClick={() => {
-              window.history.pushState(null, '', '/');
-              window.scrollTo(0, 0); 
-            }}
+            onClick={() => (window.location.href = "/")}
           >
             Indian Foodtech
           </h1>
