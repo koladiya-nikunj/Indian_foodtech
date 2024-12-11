@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: '/Indian_foodtech/',
+    // base: '/Indian_foodtech/',
   plugins: [react()],
   optimizeDeps: {
     exclude: ['lucide-react'],
