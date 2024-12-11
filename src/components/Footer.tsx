@@ -9,27 +9,28 @@ const Footer = () => {
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
-
   const handleScroll = (e: React.MouseEvent, targetId: string) => {
     e.preventDefault();
-    let targetElement;
 
-    if (targetId === "#") {
+    let targetElement;
+    if (targetId === "/") {
       targetElement = document.documentElement;
+      window.history.pushState(null, "", "/");
     } else {
       targetElement = document.getElementById(targetId);
+      window.history.pushState(null, "", `/${targetId}`);
     }
 
     if (targetElement) {
       window.scrollTo({
-        top: targetElement.offsetTop - 64,
+        top: targetElement.offsetTop - 64, // Adjust for header offset
         behavior: "smooth",
       });
     }
   };
 
   const quickLinks = [
-    { name: "Home", target: "#" },
+    { name: "Home", target: "/" },
     { name: "About Us", target: "about-us" },
     { name: "Private Label", target: "private-label" },
     { name: "Nut Butter", target: "nut-butter" },
@@ -52,7 +53,7 @@ const Footer = () => {
               ].map((product) => (
                 <li key={product}>
                   <a
-                    href={`#${product.toLowerCase().replace(/\s+/g, "-")}`}
+                    href={`/${product.toLowerCase().replace(/\s+/g, "-")}`}
                     className="hover:text-amber-400 hover:underline transition-colors duration-200"
                     onClick={(e) =>
                       handleScroll(
